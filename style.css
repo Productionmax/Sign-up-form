@@ -34,7 +34,6 @@ body {
 .rightcontainer{
     display:flex;
     flex-direction: column;
-    gap:20px;
     width:100%;
 }
 .top{
@@ -44,4 +43,27 @@ body {
     flex-direction: column;
     justify-content: center;
     gap:30px;
+    font-size: 25px;
+}
+.middle{
+    background-color: floralwhite;
+    height:50%;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.middle form{
+    display:grid;
+    grid-template-columns: repeat(2,20%);
+    gap:20px;
+}
+.formcontent{
+    display:flex;
+    flex-direction: column;
+    
+}
+input{
+width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
