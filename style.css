@@ -55,6 +55,8 @@ body {
 }
 .middle h3{
     font-size: 20px;
+    padding-bottom: 30px;
+    font-weight: 0.80;
 }
 .middle form{
     display:grid;
@@ -71,11 +73,13 @@ input{
   padding: 10px 15px;
   margin: 8px 0;
   box-sizing: border-box;
+  border: 2px solid black;
 }
 .bottom{
     background-color: rgb(212, 187, 154);
     padding-left: 50px;
     height:20%;
+    padding-top: 20px;
 }
 .submit button{
     appearance: none;
@@ -105,3 +109,7 @@ input{
     background-color: #2c974b;
   }
 
+.account{
+    font-size: 20px;
+    padding-top: 20px;
+}
