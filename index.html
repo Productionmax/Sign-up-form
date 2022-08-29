@@ -24,11 +24,11 @@
             <form action="/" id="form1">
                 <div class="formcontent">
                     <label for="fname">FIRST NAME</label>
-                    <input type="text" id="fname" required>
+                    <input type="text" id="fname" required pattern="[A-Za-z]{32}">
                 </div>
                 <div class="formcontent">
                     <label for="lname">LAST NAME</label>
-                    <input type="text" id="lname" required>
+                    <input type="text" id="lname" required pattern="[A-Za-z]{32}">
                 </div>
                 <div class="formcontent">
                     <label for="email">EMAIL</label>
@@ -54,7 +54,7 @@
             </form>
         
         
-            <p class="account">Already have an account?<a href="http://">Log in</a></p>
+            <p class="account">Already have an account?<a href="http://"> Log in</a></p>
         
     </div>
 </body>

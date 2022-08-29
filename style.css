@@ -74,6 +74,10 @@ input{
   margin: 8px 0;
   box-sizing: border-box;
   border: 2px solid black;
+  appearance: none;
+}
+.input:focus{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .bottom{
     background-color: rgb(212, 187, 154);
