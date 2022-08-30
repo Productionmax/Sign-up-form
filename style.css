@@ -73,11 +73,18 @@ input{
   padding: 10px 15px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 2px solid black;
+  border: 2px solid #E5E7EB;
   appearance: none;
 }
 .input:focus{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.error{
+    border: 2px solid red;
+}
+.error::after{
+    content: "* Passwords do not match";
+    background-color: black;
 }
 .bottom{
     background-color: rgb(212, 187, 154);
