@@ -124,3 +124,10 @@ input{
     font-size: 20px;
     padding-top: 20px;
 }
+
+.formcontent.success{
+    border-color: #09c372;
+}
+.formcontent.error{
+    border-color: #ff3860;
+}
