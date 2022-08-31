@@ -12,12 +12,14 @@ function validateInputs(){
     const password2Value = repeatpassword.value.trim();
 
     if (password2Value !== passwordValue){
-        setError(initialpassword, "Passwords doesn't match")
-    } else{setSuccess(initialpassword,"Password Matches")}
+        setError(initialpassword, "*Passwords don't match");
+        setError(repeatpassword, "");
+    } else{setSuccess(initialpassword,"*Password Matches")
+setSuccess(repeatpassword, "")}
 }
 function setError(element,message){
     const formContent = element.parentElement; //sets the specific formcontent of that specific input element
-    const errorDisplay = formContent.querySelector(".error")
+    const errorDisplay = formContent.querySelector(".errormsg")
     errorDisplay.innerText = message;
 
     formContent.classList.add('error');
@@ -25,7 +27,7 @@ function setError(element,message){
 }
 function setSuccess(element,message){
     const formContent = element.parentElement; //sets the specific formcontent of that specific input element
-    const errorDisplay = formContent.querySelector(".error")
+    const errorDisplay = formContent.querySelector(".errormsg")
     errorDisplay.innerText = message;
 
     formContent.classList.add('success');

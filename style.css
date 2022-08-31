@@ -126,8 +126,9 @@ input{
 .formcontent.error input {
     border-color: #ff3860;
 }
-.formcontent.error::after {
-    color:#ff3860;
-    font-size:9px;
+.errormsg {
+    color:black;
+    opacity: 0.6;
+    font-size:16px;
     height:13px;
 }
