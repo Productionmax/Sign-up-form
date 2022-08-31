@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up-form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="logic.js" defer></script>
 </head>
 <body>
     <div class="leftcontainer">
@@ -24,23 +25,19 @@
             <form action="/" id="form1">
                 <div class="formcontent">
                     <label for="fname">FIRST NAME</label>
-                    <input type="text" id="fname" required pattern="[A-Za-z]{32}">
-                    <div class="error"></div>
+                    <input type="text" id="fname" required pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+">
                 </div>
                 <div class="formcontent">
                     <label for="lname">LAST NAME</label>
-                    <input type="text" id="lname" required pattern="[A-Za-z]{32}">
-                    <div class="error"></div>
+                    <input type="text" id="lname" required pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+">
                 </div>
                 <div class="formcontent">
                     <label for="email">EMAIL</label>
                     <input type="email" id="email" required>
-                    <div class="error"></div>
                 </div>
                 <div class="formcontent">
                     <label for="number">PHONE NUMBER</label>
                     <input type="tel" id="number" required>
-                    <div class="error"></div>
                 </div>
                 <div class="formcontent">
                     <label for="password">PASSWORD</label>
